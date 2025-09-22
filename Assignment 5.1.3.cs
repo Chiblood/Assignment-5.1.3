@@ -18,10 +18,23 @@ public class Program
 {
     public static void Main()
     {
-        int[] nums = { 1, 2, 3, 1 };
-        bool hasDuplicates = ContainsDuplicate(nums);
-        Console.WriteLine("Input: nums = [1,2,3,1]");
-        Console.Write("hasDublicates = ");
+        int[] nums1 = { 1, 2, 3, 1 };
+        int[] nums2 = { 1, 2, 3, 4 };
+        int[] nums3 = { 1, 1, 1, 3, 3, 4, 3, 2, 4, 2 };
+
+        bool hasDuplicates = ContainsDuplicate(nums1);
+        Console.WriteLine("Input: nums1 = [1,2,3,1]");
+        Console.Write("hasDuplicates = ");
+        Console.WriteLine(hasDuplicates);
+
+        hasDuplicates = ContainsDuplicate(nums2);
+        Console.WriteLine("Input: nums2 = [1,2,3,4]");
+        Console.Write("hasDuplicates = ");
+        Console.WriteLine(hasDuplicates);
+
+        hasDuplicates = ContainsDuplicate(nums3);
+        Console.WriteLine("Input: nums3 = [1,1,1,3,3,4,3,2,4,2]");
+        Console.Write("hasDuplicates = ");
         Console.WriteLine(hasDuplicates);
     }
 
